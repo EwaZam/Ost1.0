@@ -29,7 +29,10 @@
         <activity
             android:name=".Main3Activity"
             android:label="@string/title_activity_main3" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".Main4Activity"
+            android:label="@string/title_activity_main4"></activity>
     </application>
 
 </manifest>
