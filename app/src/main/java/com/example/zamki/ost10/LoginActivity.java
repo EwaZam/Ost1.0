@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button bLogin, bRegister, bMissPass;
@@ -23,18 +24,24 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void signIn(){
         etUsername = (EditText) findViewById(R. id.etUsername);
         etPassword = (EditText) findViewById(R. id.etPassword);
-        bLogin = (Button) findViewById(R.id.bLogin);
+        bLogin = (Button) findViewById(R. id.bLogin);
+        bRegister = (Button) findViewById(R. id.bRegister);
+        bMissPass = (Button) findViewById(R. id.bMissPass);
 
-        bLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, Main2Activity.class));
-            }
-        });
+        bLogin.setOnClickListener(this);
+        bRegister.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
+        switch(view.getId()){
+            case R.id.bLogin:
+                startActivity(new Intent(this, MainActivity.class));
+            break;
+            case R.id.bRegister:
+                startActivity(new Intent(this, RegisterActivity.class));
+                break;
 
+        }
     }
 }

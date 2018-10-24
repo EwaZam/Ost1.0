@@ -32,7 +32,9 @@
         <activity android:name=".LoginActivity" />
         <activity
             android:name=".Main4Activity"
-            android:label="@string/title_activity_main4"></activity>
+            android:label="@string/title_activity_main4" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".FireMissilesDialogFragment"></activity>
     </application>
 
 </manifest>
