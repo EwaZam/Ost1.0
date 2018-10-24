@@ -7,36 +7,54 @@
     tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etUsername"
         android:layout_width="wrap_content"
         android:layout_height="46dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="108dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Login"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        android:selectAllOnFocus="false"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="85dp"
+        tools:text="Login" />
 
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="46dp"
-        android:layout_marginBottom="44dp"
+        android:id="@+id/etPassword"
+        android:layout_width="217dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="Password"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="191dp"
+        tools:text="Password" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="288dp"
-        android:text="Sign in"
+        android:layout_marginBottom="172dp"
+        android:background="#7dc7b0"
+        android:text="Zaloguj"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="131dp" />
+        tools:layout_editor_absoluteX="148dp" />
+
+    <Button
+        android:id="@+id/bRegister"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:background="#8cb2b2"
+        android:text="Zarejestruj"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/bMissPass"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapomniałem hasła"
+        android:textColor="#669999"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="358dp" />
 </android.support.constraint.ConstraintLayout>
